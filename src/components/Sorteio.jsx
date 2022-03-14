@@ -1,15 +1,15 @@
 import React from 'react';
 import Card from './Card';
 
-const Sorteio = ({ min, max }) => {
-    const aleatorio = parseInt(Math.random() * (max - min)) + min
+const Sorteio = (props) => {
+    //const aleatorio = parseInt(Math.random() * (max - min)) + min
 
     return (
         <Card title={'Sorteio de um número: '} green>
             <div>
                 <span>
                     <span>Resultado: </span>
-                    <strong>{ aleatorio }</strong>
+                    <strong>{ 10 }</strong>
                 </span>
             </div>
         </Card>
