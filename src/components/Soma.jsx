@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from './Card';
 
-const Media = (props) => {
+const Media = ({ min, max }) => {
     return (
         <Card title={'Soma dos Números'} blue>
             <div>
                 <span>
                     <span>Resultado: </span>
-                    <strong>10</strong>
+                    <strong>{ max + min }</strong>
                 </span>
             </div>
         </Card>
